@@ -65,7 +65,7 @@ module.exports.processLoginPage = (req, res, next) => {
             if(err) {
                 return next(err);
             }
-            return res.redirect('bcon-list');
+            return res.redirect('survey-list');
         });
         
     })(req, res, next);
@@ -112,7 +112,7 @@ module.exports.processRegisterPage = (req, res, next) => {
             // redirect the user and authenticate
 
             return passport.authenticate('local')(req, res, () => {
-                res.redirect('/bcon-list');
+                res.redirect('/survey-list');
             })
         }
 

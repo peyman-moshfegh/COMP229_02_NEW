@@ -17,7 +17,7 @@ Date: 10/29/2021
             button.addEventListener('click', (event) => {
                 if (!confirm("Are you sure?")){
                     event.preventDefault();
-                    //window.location.assign('/bcon-list');
+                    //window.location.assign('/survey-list');
                 }
             });
         }
